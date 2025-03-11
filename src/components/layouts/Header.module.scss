@@ -1,0 +1,85 @@
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    border-bottom: 1px solid #888888;
+}
+
+.logo {
+    color: $text-main;
+    font-size: 32px;
+    font-weight: 700px;
+    cursor: default;
+}
+
+.menu {
+    display: flex;
+    justify-content: row;
+    gap: 25px;
+}
+
+.el {
+    list-style: none;
+}
+
+.el button {
+    color: $text-main;
+    font-size: 20px;
+    font-weight: 500px;
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.el button:hover {
+    color: $background-main;
+    background-color: $text-main;
+}
+
+.active {
+    list-style: none;
+}
+
+.active button {
+    color: $background-main;
+    font-size: 20px;
+    font-weight: 500px;
+    background-color: $text-main;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.active button:hover {
+    color: $text-main;
+    background-color: transparent;
+}
+
+.button {
+    color: $text-main;
+    font-size: 22px;
+    font-weight: 600px;
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 1px solid $text-main;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.button:hover {
+    color: $background-main;
+    background-color: $text-main;
+}
